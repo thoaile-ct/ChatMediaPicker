@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutAVBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mark_view_border_round_orange">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMarkNumber"
+            android:layout_width="@dimen/mark_view_size"
+            android:layout_height="@dimen/mark_view_size"
+            android:textColor="@color/mark_view_text_color"
+            android:background="@drawable/mark_view_bg_text_count"
+            android:gravity="center"
+            android:textSize="@dimen/mark_view_text_size"
+            tools:text="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
